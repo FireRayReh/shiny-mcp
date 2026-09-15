@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>ShinyMcp.Server</RootNamespace>
+    <AssemblyName>shiny-mcp</AssemblyName>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <RuntimeIdentifiers>win-x64;osx-x64;osx-arm64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModelContextProtocol" Version="*-*" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Guidance\*.md" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

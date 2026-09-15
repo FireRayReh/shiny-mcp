@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "shiny-mcp": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "${workspaceFolder}/src/ShinyMcp.Server/ShinyMcp.Server.csproj",
+        "-c",
+        "Release"
+      ]
+    }
+  }
+}
